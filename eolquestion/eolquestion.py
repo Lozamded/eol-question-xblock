@@ -97,7 +97,6 @@ class EolQuestionXBlock(XBlock):
 
     @XBlock.handler
     def studio_submit(self, request, suffix=''):
-    	print("holas")
         self.display_name = request.params['display_name']
         self.type = request.params['type']
         self.index = request.params['index']
