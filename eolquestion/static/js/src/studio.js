@@ -15,6 +15,9 @@ function EolQuestionStudioXBlock(runtime, element) {
       form_data.append('index', index);
       form_data.append('text', text);
       form_data.append('theme', theme);
+      form_data.append('color', color);
+      form_data.append('idspecific', idspecific);
+      
       if ($.isFunction(runtime.notify)) {
         runtime.notify('save', {state: 'start'});
       }
