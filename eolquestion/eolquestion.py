@@ -123,7 +123,7 @@ class EolQuestionXBlock(XBlock):
             'field_text': self.fields['text'],
             'field_theme': self.fields['theme'],
             'field_color': self.fields['color'],
-            'field_idspecific': self.fields['field_idspecific'],
+            'field_idspecific': self.fields['idspecific'],
             'xblock': self
         }
     
