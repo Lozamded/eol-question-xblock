@@ -72,10 +72,10 @@ class EolQuestionXBlock(XBlock):
         scope = Scope.settings
     )
 
-    # ID
+    # ID SPECIFIC
     idspecific = String(
-        display_name = _("ID de pregunta"),
-        help = _("definir identificador para la pregunta"),
+        display_name = _("ID específico"),
+        help = _("definir un identificador para la pregunta"),
         default = '1',
         values = { "minlength" : 1 },
         scope = Scope.settings
