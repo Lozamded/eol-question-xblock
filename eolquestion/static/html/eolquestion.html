@@ -1,72 +1,118 @@
 {% load i18n %}
 <style>
     .eolquestion_block.Media .index:after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -1px;
-    bottom: -2px;
-    right: 0px;
-    border: 3px {{xblock.color}} solid;
-    border-radius: 14px 0px 0px 14px;
-}
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -1px;
+        bottom: -2px;
+        right: 0px;
 
-.eolquestion_block.Media.Media-Control .index:after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -1px;
-    bottom: -2px;
-    right: 0px;
-    border: 3px {{xblock.color}} solid;
-    /*
+        border: 3px {
+                {
+                xblock.color
+            }
+        }
+
+        solid;
+        border-radius: 14px 0px 0px 14px;
+    }
+
+    .eolquestion_block.Media.Media-Control .index:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -1px;
+        bottom: -2px;
+        right: 0px;
+
+        border: 3px {
+                {
+                xblock.color
+            }
+        }
+
+        solid;
+        /*
     border: 3px #00dc76 solid;
     */
-    border-radius: 14px 0px 0px 14px;
-}
+        border-radius: 14px 0px 0px 14px;
+    }
 
-.eolquestion_block.Media.Media-Calificada .index:after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -1px;
-    bottom: -2px;
-    right: 0px;
-    border: 3px {{xblock.color}} solid;
-    /*
+    .eolquestion_block.Media.Media-Calificada .index:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -1px;
+        bottom: -2px;
+        right: 0px;
+
+        border: 3px {
+                {
+                xblock.color
+            }
+        }
+
+        solid;
+        /*
     border: 3px #0062dc solid;
     */
-    border-radius: 14px 0px 0px 14px;
-}
+        border-radius: 14px 0px 0px 14px;
+    }
 
 
-.eolquestion_block.Media .separator {
-    height: 100%;
-    background-color: {{xblock.color}};
-    top: 0px;
-    width: 4px;
-    left: calc(10px + 23px + 10px);
-}
+    .eolquestion_block.Media .separator {
+        height: 100%;
 
-.eolquestion_block.Media .separator:after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    bottom: -2px;
-    width: 4px;
-    background-color: {{xblock.color}};
-    border: 1px {{xblock.color}} solid;
-}
+        background-color: {
+                {
+                xblock.color
+            }
+        }
+
+        ;
+        top: 0px;
+        width: 4px;
+        left: calc(10px + 23px + 10px);
+    }
+
+    .eolquestion_block.Media .separator:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        width: 4px;
+
+        background-color: {
+                {
+                xblock.color
+            }
+        }
+
+        ;
+
+        border: 1px {
+                {
+                xblock.color
+            }
+        }
+
+        solid;
+    }
 </style>
 
 
-<div class="eolquestion_block {{xblock.theme}} {% if xblock.type == 'No Calificada' %} {{xblock.theme}}-No-Calificada {% else %} {{xblock.theme}}-{{xblock.type}} {% endif %}" id="questionstatement_{{xblock.idspecific}}" style=" border-color: {{xblock.color}} ">
-    <div class="q-tooltip index {% if xblock.type == 'No Calificada' %} No-Calificada {% else %} {{xblock.type}} {% endif %}" style="background-color: {{xblock.color}}!important">
+<div class="eolquestion_block {{xblock.theme}} {% if xblock.type == 'No Calificada' %} {{xblock.theme}}-No-Calificada {% else %} {{xblock.theme}}-{{xblock.type}} {% endif %}"
+    id="questionstatement_{{xblock.idspecific}}" style=" border-color: {{xblock.color}} ">
+    <div class="q-tooltip index {% if xblock.type == 'No Calificada' %} No-Calificada {% else %} {{xblock.type}} {% endif %}"
+        style="background-color: {{xblock.color}}!important">
         <span class="index-number">{{xblock.index}}</span>
-        <span class="q-tooltiptext"  >{% trans "Pregunta" %} {{xblock.type}}</span>
+        <span class="q-tooltiptext">{% trans "Pregunta" %} {{xblock.type}}</span>
     </div>
     <div class="separator"></div>
     <div class="text">
         {{xblock.text | safe}}
     </div>
-    <div style="clear:both;"></div>
+    <div style="clear:both;">
+    </div>
+</div>
