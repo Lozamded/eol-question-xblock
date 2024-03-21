@@ -117,7 +117,7 @@
 .eolquestion_block.Media .index {
     width: 40px;
     height: 100%;
-    border-radius: 14px 0px 0px 14px;
+    border-radius: 12px 0px 0px 12px;
     top: 0px;
     left: 0px;
 }
@@ -182,7 +182,7 @@
     background-color: #612871;
     */
     top: 0px;
-    width: 4px;
+    width: 6px;
     left: calc(10px + 23px + 10px);
 }
 
