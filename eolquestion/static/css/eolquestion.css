@@ -178,9 +178,6 @@
 .eolquestion_block.Media .separator {
     height: 100%;
     background-color: #612871;
-    /*
-    background-color: #612871;
-    */
     top: 0px;
     width: 6px;
     left: calc(10px + 23px + 10px);
@@ -192,18 +189,11 @@
     top: -2px;
     bottom: -2px;
     width: 4px;
-    /*
-    background-color: #612871;
-    border: 1px #612871 solid;
-    */
 }
 
 .eolquestion_block.Media-Control .separator {
     height: 100%;
     background-color: #612871;
-    /*
-    background-color: #00dc76;
-    */
     top: 0px;
     width: 5px;
     left: calc(10px + 23px + 10px);
@@ -215,17 +205,10 @@
     top: -2px;
     bottom: -2px;
     width: 4px;
-    /*
-    background-color: #612871;
-    border: 1px #612871 solid;
-    */
 }
 
 .eolquestion_block.Media-Calificada .separator {
     height: 100%;
-    /*
-        background-color: #612871;
-    */
     top: 0px;
     width: 5px;
     left: calc(10px + 23px + 10px);
@@ -237,10 +220,6 @@
     top: -2px;
     bottom: -2px;
     width: 4px;
-    /*
-    background-color: #612871;
-    border: 1px #612871 solid;
-    */
 }
 
 .eolquestion_block.Media .Control {
